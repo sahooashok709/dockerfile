@@ -3,5 +3,3 @@ MAINTAINER BIBHU
 COPY ./tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
 COPY ./goal.war /usr/local/tomcat/webapps/goal.war
 EXPOSE 8080
-CMD ["catalina.sh", "run"]
-
