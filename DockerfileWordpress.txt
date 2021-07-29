@@ -1,0 +1,5 @@
+FROM wordpress
+MAINTAINER BIBHU
+WORKDIR /var/www/html/
+ADD ./denyaccess/htaccess /var/www/html/wp-admin/htaccess
+RUN mv /var/www/html/wp-admin/htaccess /var/www/html/wp-admin/.htaccess #restrict access to wp-admin by adding ips in .htaccess file
